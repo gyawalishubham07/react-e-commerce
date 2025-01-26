@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Navigate, Outlet } from 'react-router-dom'
 import { HOME_ROUTE } from '../constants/routes';
+import Footer from '../components/Footer';
 
 
 
@@ -11,7 +12,9 @@ const UnAuthLayout = () => {
     return (
       <div>
       {user ? <Navigate to={HOME_ROUTE}/> : <Outlet/>   }
+      
       </div>
+      
     )
 }
 

@@ -138,7 +138,7 @@ const RegisterForm = () => {
           {errors.confirmPassword?.message}
         </p>
       </div>
-      <div className="py-4">
+      <div className="mb-4">
         <input
           type="checkbox"
           name="check"
